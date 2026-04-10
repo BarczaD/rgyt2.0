@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("rgyt2.0")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34a3bf2587dfb0f3bff9759a10348cfc49ad5e53")]
 [assembly: System.Reflection.AssemblyProductAttribute("rgyt2.0")]
 [assembly: System.Reflection.AssemblyTitleAttribute("rgyt2.0")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

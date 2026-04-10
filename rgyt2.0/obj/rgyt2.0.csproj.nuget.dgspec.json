@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Prog\\hivatal\\rgyt kiváltás\\git\\rgyt\\rgyt2.0\\rgyt2.0\\rgyt2.0.csproj": {}
+    "D:\\Prog\\hivatal\\rgyt kiváltás\\source\\rgyt2.0\\rgyt2.0.csproj": {}
   },
   "projects": {
-    "D:\\Prog\\hivatal\\rgyt kiváltás\\git\\rgyt\\rgyt2.0\\rgyt2.0\\rgyt2.0.csproj": {
+    "D:\\Prog\\hivatal\\rgyt kiváltás\\source\\rgyt2.0\\rgyt2.0.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Prog\\hivatal\\rgyt kiváltás\\git\\rgyt\\rgyt2.0\\rgyt2.0\\rgyt2.0.csproj",
+        "projectUniqueName": "D:\\Prog\\hivatal\\rgyt kiváltás\\source\\rgyt2.0\\rgyt2.0.csproj",
         "projectName": "rgyt2.0",
-        "projectPath": "D:\\Prog\\hivatal\\rgyt kiváltás\\git\\rgyt\\rgyt2.0\\rgyt2.0\\rgyt2.0.csproj",
+        "projectPath": "D:\\Prog\\hivatal\\rgyt kiváltás\\source\\rgyt2.0\\rgyt2.0.csproj",
         "packagesPath": "C:\\Users\\David Barcza\\.nuget\\packages\\",
-        "outputPath": "D:\\Prog\\hivatal\\rgyt kiváltás\\git\\rgyt\\rgyt2.0\\rgyt2.0\\obj\\",
+        "outputPath": "D:\\Prog\\hivatal\\rgyt kiváltás\\source\\rgyt2.0\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\David Barcza\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +45,12 @@
       "frameworks": {
         "net10.0-windows7.0": {
           "targetAlias": "net10.0-windows",
+          "dependencies": {
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[10.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

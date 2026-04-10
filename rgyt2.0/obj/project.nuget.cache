@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "yP/mDbDbQQA=",
+  "dgSpecHash": "Cm0ZsK5j/lo=",
   "success": true,
-  "projectFilePath": "D:\\Prog\\hivatal\\rgyt kiváltás\\git\\rgyt\\rgyt2.0\\rgyt2.0\\rgyt2.0.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Prog\\hivatal\\rgyt kiváltás\\source\\rgyt2.0\\rgyt2.0.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\David Barcza\\.nuget\\packages\\microsoft.data.sqlite\\10.0.5\\microsoft.data.sqlite.10.0.5.nupkg.sha512",
+    "C:\\Users\\David Barcza\\.nuget\\packages\\microsoft.data.sqlite.core\\10.0.5\\microsoft.data.sqlite.core.10.0.5.nupkg.sha512",
+    "C:\\Users\\David Barcza\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.11\\sqlitepclraw.bundle_e_sqlite3.2.1.11.nupkg.sha512",
+    "C:\\Users\\David Barcza\\.nuget\\packages\\sqlitepclraw.core\\2.1.11\\sqlitepclraw.core.2.1.11.nupkg.sha512",
+    "C:\\Users\\David Barcza\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.11\\sqlitepclraw.lib.e_sqlite3.2.1.11.nupkg.sha512",
+    "C:\\Users\\David Barcza\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.11\\sqlitepclraw.provider.e_sqlite3.2.1.11.nupkg.sha512"
+  ],
   "logs": []
 }
