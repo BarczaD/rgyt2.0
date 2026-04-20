@@ -28,43 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            labelMain = new Label();
-            labelSecondary = new Label();
             label1 = new Label();
             usernameLabel = new Label();
             pwdTextBox = new TextBox();
             usernameTextBox = new TextBox();
             panel1 = new Panel();
             loginBtn = new Button();
+            panel2 = new Panel();
+            label2 = new Label();
+            label3 = new Label();
+            panel3 = new Panel();
             panel1.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
-            // 
-            // labelMain
-            // 
-            labelMain.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            labelMain.AutoSize = true;
-            labelMain.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelMain.Location = new Point(30, 18);
-            labelMain.Name = "labelMain";
-            labelMain.Size = new Size(524, 40);
-            labelMain.TabIndex = 0;
-            labelMain.Text = "Rendszeres Gyermekvédelmi Támogatás";
-            labelMain.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // labelSecondary
-            // 
-            labelSecondary.Anchor = AnchorStyles.Top;
-            labelSecondary.AutoSize = true;
-            labelSecondary.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelSecondary.Location = new Point(185, 58);
-            labelSecondary.Name = "labelSecondary";
-            labelSecondary.Size = new Size(214, 30);
-            labelSecondary.TabIndex = 1;
-            labelSecondary.Text = "Adatkinyerő Rendszer";
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = Color.FromArgb(91, 112, 131);
             label1.Location = new Point(274, 172);
             label1.Name = "label1";
             label1.Size = new Size(37, 15);
@@ -74,6 +55,7 @@
             // usernameLabel
             // 
             usernameLabel.AutoSize = true;
+            usernameLabel.ForeColor = Color.FromArgb(91, 112, 131);
             usernameLabel.Location = new Point(249, 118);
             usernameLabel.Name = "usernameLabel";
             usernameLabel.Size = new Size(87, 15);
@@ -97,11 +79,10 @@
             // 
             // panel1
             // 
-            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            panel1.BackColor = Color.FromArgb(244, 248, 252);
+            panel1.Controls.Add(panel2);
             panel1.Controls.Add(loginBtn);
-            panel1.Controls.Add(labelMain);
             panel1.Controls.Add(label1);
-            panel1.Controls.Add(labelSecondary);
             panel1.Controls.Add(usernameLabel);
             panel1.Controls.Add(usernameTextBox);
             panel1.Controls.Add(pwdTextBox);
@@ -112,18 +93,66 @@
             // 
             // loginBtn
             // 
-            loginBtn.Location = new Point(255, 219);
+            loginBtn.BackColor = Color.FromArgb(47, 110, 165);
+            loginBtn.FlatStyle = FlatStyle.Flat;
+            loginBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            loginBtn.ForeColor = Color.White;
+            loginBtn.Location = new Point(255, 223);
             loginBtn.Name = "loginBtn";
             loginBtn.Size = new Size(75, 23);
             loginBtn.TabIndex = 6;
             loginBtn.Text = "Belépés";
-            loginBtn.UseVisualStyleBackColor = true;
+            loginBtn.UseVisualStyleBackColor = false;
             loginBtn.Click += loginBtnClick;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(22, 50, 79);
+            panel2.Controls.Add(label3);
+            panel2.Controls.Add(label2);
+            panel2.Controls.Add(panel3);
+            panel2.Dock = DockStyle.Top;
+            panel2.ForeColor = Color.White;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(584, 100);
+            panel2.TabIndex = 7;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 19F, FontStyle.Bold);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(42, 11);
+            label2.Name = "label2";
+            label2.Size = new Size(500, 36);
+            label2.TabIndex = 0;
+            label2.Text = "Rendszeres Gyermekvédelmi Támogatás";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 15F);
+            label3.ForeColor = Color.FromArgb(220, 234, 247);
+            label3.Location = new Point(191, 49);
+            label3.Name = "label3";
+            label3.Size = new Size(202, 28);
+            label3.TabIndex = 1;
+            label3.Text = "Adatkinyerő Rendszer";
+            // 
+            // panel3
+            // 
+            panel3.Dock = DockStyle.Bottom;
+            panel3.Location = new Point(0, -86);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(584, 186);
+            panel3.TabIndex = 8;
             // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             ClientSize = new Size(584, 286);
             Controls.Add(panel1);
             Name = "LoginForm";
@@ -131,13 +160,12 @@
             Text = "Bejelentkezés";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Label labelMain;
-        private Label labelSecondary;
         private TextBox usernameTextBox;
         private Label label1;
         private Label usernameLabel;
@@ -163,5 +191,10 @@
             this.Hide();
 
         }
+
+        private Panel panel2;
+        private Label label2;
+        private Panel panel3;
+        private Label label3;
     }
 }

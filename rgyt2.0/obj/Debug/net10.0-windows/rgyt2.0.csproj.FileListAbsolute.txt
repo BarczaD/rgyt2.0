@@ -48,3 +48,6 @@ D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\obj\Debug\net10.0-windows\rgyt2.0
 D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\obj\Debug\net10.0-windows\rgyt2.0.csproj.Up2Date
 D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\obj\Debug\net10.0-windows\rgyt2._0.Forms.ConfigForm.resources
 D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\obj\Debug\net10.0-windows\rgyt2._0.Forms.PasswordChangeForm.resources
+D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\obj\Debug\net10.0-windows\rgyt2._0.Properties.Resources.resources
+D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\obj\Debug\net10.0-windows\rgyt2._0.Forms.QueryForm.resources
+D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\obj\Debug\net10.0-windows\rgyt2._0.Forms.SettingsForm.resources
