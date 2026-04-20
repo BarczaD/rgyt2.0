@@ -51,3 +51,4 @@ D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\obj\Debug\net10.0-windows\rgyt2._
 D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\obj\Debug\net10.0-windows\rgyt2._0.Properties.Resources.resources
 D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\obj\Debug\net10.0-windows\rgyt2._0.Forms.QueryForm.resources
 D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\obj\Debug\net10.0-windows\rgyt2._0.Forms.SettingsForm.resources
+D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\obj\Debug\net10.0-windows\rgyt2._0.Forms.temp.resources

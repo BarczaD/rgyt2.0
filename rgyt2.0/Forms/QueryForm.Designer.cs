@@ -28,268 +28,329 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            panel3 = new Panel();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
-            loginBtn = new Button();
-            progressBar1 = new ProgressBar();
-            panel2 = new Panel();
-            button6 = new Button();
-            button5 = new Button();
+            rootPanel = new Panel();
+            leftPanel = new Panel();
+            rightPanel = new Panel();
+            actionsPanel = new Panel();
+            gridViewPanel = new Panel();
+            loadingBarPanel = new Panel();
             panel4 = new Panel();
             label2 = new Label();
+            panel1 = new Panel();
+            adultChildQueryBtn = new Button();
+            rgykChildSumBtn = new Button();
+            hChildSumQueryBtn = new Button();
+            rgykQueryBtn = new Button();
+            hQueryBtn = new Button();
             panel5 = new Panel();
             label1 = new Label();
-            panel6 = new Panel();
-            dataGridView1 = new DataGridView();
-            panel1.SuspendLayout();
-            panel3.SuspendLayout();
-            panel2.SuspendLayout();
+            queryProgressBar = new ProgressBar();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            resultClearBtn = new Button();
+            exportBtn = new Button();
+            rootPanel.SuspendLayout();
+            leftPanel.SuspendLayout();
+            rightPanel.SuspendLayout();
+            actionsPanel.SuspendLayout();
+            gridViewPanel.SuspendLayout();
+            loadingBarPanel.SuspendLayout();
             panel4.SuspendLayout();
+            panel1.SuspendLayout();
             panel5.SuspendLayout();
-            panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel2.SuspendLayout();
+            panel3.SuspendLayout();
             SuspendLayout();
             // 
-            // panel1
+            // rootPanel
             // 
-            panel1.Controls.Add(panel4);
-            panel1.Controls.Add(panel3);
-            panel1.Controls.Add(progressBar1);
-            panel1.Location = new Point(12, 12);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(275, 426);
-            panel1.TabIndex = 0;
+            rootPanel.Controls.Add(rightPanel);
+            rootPanel.Controls.Add(leftPanel);
+            rootPanel.Location = new Point(12, 12);
+            rootPanel.Name = "rootPanel";
+            rootPanel.Size = new Size(776, 426);
+            rootPanel.TabIndex = 0;
             // 
-            // panel3
+            // leftPanel
             // 
-            panel3.BackColor = Color.White;
-            panel3.Controls.Add(button4);
-            panel3.Controls.Add(button3);
-            panel3.Controls.Add(button2);
-            panel3.Controls.Add(button1);
-            panel3.Controls.Add(loginBtn);
-            panel3.Location = new Point(17, 95);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(239, 250);
-            panel3.TabIndex = 1;
+            leftPanel.Controls.Add(panel1);
+            leftPanel.Controls.Add(panel4);
+            leftPanel.Controls.Add(loadingBarPanel);
+            leftPanel.Dock = DockStyle.Left;
+            leftPanel.Location = new Point(0, 0);
+            leftPanel.Name = "leftPanel";
+            leftPanel.Size = new Size(220, 426);
+            leftPanel.TabIndex = 0;
             // 
-            // button4
+            // rightPanel
             // 
-            button4.BackColor = Color.FromArgb(47, 110, 165);
-            button4.FlatStyle = FlatStyle.Popup;
-            button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(10, 170);
-            button4.Name = "button4";
-            button4.Size = new Size(220, 23);
-            button4.TabIndex = 16;
-            button4.Text = "Nagykorú gyermekes szülők";
-            button4.UseVisualStyleBackColor = false;
+            rightPanel.Controls.Add(gridViewPanel);
+            rightPanel.Controls.Add(actionsPanel);
+            rightPanel.Dock = DockStyle.Fill;
+            rightPanel.Location = new Point(220, 0);
+            rightPanel.Name = "rightPanel";
+            rightPanel.Size = new Size(556, 426);
+            rightPanel.TabIndex = 1;
             // 
-            // button3
+            // actionsPanel
             // 
-            button3.BackColor = Color.FromArgb(47, 110, 165);
-            button3.FlatStyle = FlatStyle.Popup;
-            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(10, 141);
-            button3.Name = "button3";
-            button3.Size = new Size(220, 23);
-            button3.TabIndex = 15;
-            button3.Text = "Gyerekszám (csak RGYK)";
-            button3.UseVisualStyleBackColor = false;
+            actionsPanel.Controls.Add(panel3);
+            actionsPanel.Controls.Add(panel2);
+            actionsPanel.Dock = DockStyle.Bottom;
+            actionsPanel.Location = new Point(0, 398);
+            actionsPanel.Name = "actionsPanel";
+            actionsPanel.Size = new Size(556, 28);
+            actionsPanel.TabIndex = 1;
             // 
-            // button2
+            // gridViewPanel
             // 
-            button2.BackColor = Color.FromArgb(47, 110, 165);
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(10, 112);
-            button2.Name = "button2";
-            button2.Size = new Size(220, 23);
-            button2.TabIndex = 14;
-            button2.Text = "Gyerekszám (H-sok)";
-            button2.UseVisualStyleBackColor = false;
+            gridViewPanel.BackColor = Color.FromArgb(184, 208, 234);
+            gridViewPanel.Controls.Add(panel5);
+            gridViewPanel.Dock = DockStyle.Fill;
+            gridViewPanel.Location = new Point(0, 0);
+            gridViewPanel.Name = "gridViewPanel";
+            gridViewPanel.Size = new Size(556, 398);
+            gridViewPanel.TabIndex = 2;
             // 
-            // button1
+            // loadingBarPanel
             // 
-            button1.BackColor = Color.FromArgb(47, 110, 165);
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(10, 83);
-            button1.Name = "button1";
-            button1.Size = new Size(220, 23);
-            button1.TabIndex = 13;
-            button1.Text = "Csak RGYK";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // loginBtn
-            // 
-            loginBtn.BackColor = Color.FromArgb(47, 110, 165);
-            loginBtn.FlatStyle = FlatStyle.Popup;
-            loginBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            loginBtn.ForeColor = Color.White;
-            loginBtn.Location = new Point(10, 54);
-            loginBtn.Name = "loginBtn";
-            loginBtn.Size = new Size(220, 23);
-            loginBtn.TabIndex = 12;
-            loginBtn.Text = "H-sok";
-            loginBtn.UseVisualStyleBackColor = false;
-            // 
-            // progressBar1
-            // 
-            progressBar1.Anchor = AnchorStyles.Top;
-            progressBar1.BackColor = Color.White;
-            progressBar1.ForeColor = Color.FromArgb(47, 110, 165);
-            progressBar1.Location = new Point(17, 390);
-            progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(239, 23);
-            progressBar1.Style = ProgressBarStyle.Continuous;
-            progressBar1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            panel2.Controls.Add(button6);
-            panel2.Controls.Add(button5);
-            panel2.Location = new Point(293, 392);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(495, 46);
-            panel2.TabIndex = 2;
-            // 
-            // button6
-            // 
-            button6.BackColor = Color.FromArgb(47, 110, 165);
-            button6.FlatStyle = FlatStyle.Popup;
-            button6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button6.ForeColor = Color.White;
-            button6.Location = new Point(325, 10);
-            button6.Name = "button6";
-            button6.Size = new Size(121, 23);
-            button6.TabIndex = 18;
-            button6.Text = "Exportálás";
-            button6.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            button5.BackColor = Color.FromArgb(47, 110, 165);
-            button5.FlatStyle = FlatStyle.Popup;
-            button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.ForeColor = Color.White;
-            button5.Location = new Point(39, 10);
-            button5.Name = "button5";
-            button5.Size = new Size(121, 23);
-            button5.TabIndex = 17;
-            button5.Text = "Ürítés";
-            button5.UseVisualStyleBackColor = false;
+            loadingBarPanel.Controls.Add(queryProgressBar);
+            loadingBarPanel.Dock = DockStyle.Bottom;
+            loadingBarPanel.Location = new Point(0, 398);
+            loadingBarPanel.Name = "loadingBarPanel";
+            loadingBarPanel.Size = new Size(220, 28);
+            loadingBarPanel.TabIndex = 0;
             // 
             // panel4
             // 
             panel4.BackColor = Color.FromArgb(22, 50, 79);
             panel4.Controls.Add(label2);
+            panel4.Dock = DockStyle.Top;
             panel4.ForeColor = Color.White;
-            panel4.Location = new Point(17, 12);
+            panel4.Location = new Point(0, 0);
             panel4.Name = "panel4";
-            panel4.Size = new Size(239, 67);
-            panel4.TabIndex = 8;
+            panel4.Size = new Size(220, 67);
+            panel4.TabIndex = 10;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 19F, FontStyle.Bold);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(30, 15);
+            label2.Location = new Point(22, 15);
             label2.Name = "label2";
             label2.Size = new Size(177, 36);
             label2.TabIndex = 1;
             label2.Text = "Lekérdezések";
             // 
+            // panel1
+            // 
+            panel1.Controls.Add(adultChildQueryBtn);
+            panel1.Controls.Add(hQueryBtn);
+            panel1.Controls.Add(rgykChildSumBtn);
+            panel1.Controls.Add(rgykQueryBtn);
+            panel1.Controls.Add(hChildSumQueryBtn);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 67);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(220, 331);
+            panel1.TabIndex = 11;
+            // 
+            // adultChildQueryBtn
+            // 
+            adultChildQueryBtn.BackColor = Color.White;
+            adultChildQueryBtn.FlatStyle = FlatStyle.Popup;
+            adultChildQueryBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            adultChildQueryBtn.ForeColor = Color.FromArgb(91, 112, 131);
+            adultChildQueryBtn.Location = new Point(6, 146);
+            adultChildQueryBtn.Name = "adultChildQueryBtn";
+            adultChildQueryBtn.Size = new Size(211, 23);
+            adultChildQueryBtn.TabIndex = 26;
+            adultChildQueryBtn.Text = "Nagykorú gyermekes szülők";
+            adultChildQueryBtn.UseVisualStyleBackColor = false;
+            // 
+            // rgykChildSumBtn
+            // 
+            rgykChildSumBtn.BackColor = Color.White;
+            rgykChildSumBtn.FlatStyle = FlatStyle.Popup;
+            rgykChildSumBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            rgykChildSumBtn.ForeColor = Color.FromArgb(91, 112, 131);
+            rgykChildSumBtn.Location = new Point(6, 117);
+            rgykChildSumBtn.Name = "rgykChildSumBtn";
+            rgykChildSumBtn.Size = new Size(211, 23);
+            rgykChildSumBtn.TabIndex = 25;
+            rgykChildSumBtn.Text = "Gyerekszám (csak RGYK)";
+            rgykChildSumBtn.UseVisualStyleBackColor = false;
+            // 
+            // hChildSumQueryBtn
+            // 
+            hChildSumQueryBtn.BackColor = Color.White;
+            hChildSumQueryBtn.FlatStyle = FlatStyle.Popup;
+            hChildSumQueryBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            hChildSumQueryBtn.ForeColor = Color.FromArgb(91, 112, 131);
+            hChildSumQueryBtn.Location = new Point(6, 88);
+            hChildSumQueryBtn.Name = "hChildSumQueryBtn";
+            hChildSumQueryBtn.Size = new Size(211, 23);
+            hChildSumQueryBtn.TabIndex = 24;
+            hChildSumQueryBtn.Text = "Gyerekszám (H-sok)";
+            hChildSumQueryBtn.UseVisualStyleBackColor = false;
+            // 
+            // rgykQueryBtn
+            // 
+            rgykQueryBtn.BackColor = Color.White;
+            rgykQueryBtn.FlatStyle = FlatStyle.Popup;
+            rgykQueryBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            rgykQueryBtn.ForeColor = Color.FromArgb(91, 112, 131);
+            rgykQueryBtn.Location = new Point(6, 59);
+            rgykQueryBtn.Name = "rgykQueryBtn";
+            rgykQueryBtn.Size = new Size(211, 23);
+            rgykQueryBtn.TabIndex = 23;
+            rgykQueryBtn.Text = "Csak RGYK";
+            rgykQueryBtn.UseVisualStyleBackColor = false;
+            // 
+            // hQueryBtn
+            // 
+            hQueryBtn.BackColor = Color.White;
+            hQueryBtn.FlatStyle = FlatStyle.Popup;
+            hQueryBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            hQueryBtn.ForeColor = Color.FromArgb(91, 112, 131);
+            hQueryBtn.Location = new Point(6, 30);
+            hQueryBtn.Name = "hQueryBtn";
+            hQueryBtn.Size = new Size(211, 23);
+            hQueryBtn.TabIndex = 22;
+            hQueryBtn.Text = "H-sok";
+            hQueryBtn.UseVisualStyleBackColor = false;
+            // 
             // panel5
             // 
             panel5.BackColor = Color.FromArgb(22, 50, 79);
             panel5.Controls.Add(label1);
+            panel5.Dock = DockStyle.Top;
             panel5.ForeColor = Color.White;
-            panel5.Location = new Point(421, 24);
+            panel5.Location = new Point(0, 0);
             panel5.Name = "panel5";
-            panel5.Size = new Size(239, 67);
-            panel5.TabIndex = 9;
+            panel5.Size = new Size(556, 67);
+            panel5.TabIndex = 14;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 19F, FontStyle.Bold);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(39, 15);
+            label1.Location = new Point(195, 15);
             label1.Name = "label1";
             label1.Size = new Size(166, 36);
             label1.TabIndex = 1;
             label1.Text = "Eredmények";
             // 
-            // panel6
+            // queryProgressBar
             // 
-            panel6.BackColor = Color.FromArgb(184, 208, 234);
-            panel6.Controls.Add(dataGridView1);
-            panel6.Location = new Point(293, 107);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(495, 279);
-            panel6.TabIndex = 10;
+            queryProgressBar.BackColor = Color.White;
+            queryProgressBar.Dock = DockStyle.Fill;
+            queryProgressBar.ForeColor = Color.FromArgb(47, 110, 165);
+            queryProgressBar.Location = new Point(0, 0);
+            queryProgressBar.Name = "queryProgressBar";
+            queryProgressBar.Size = new Size(220, 28);
+            queryProgressBar.Style = ProgressBarStyle.Continuous;
+            queryProgressBar.TabIndex = 2;
             // 
-            // dataGridView1
+            // panel2
             // 
-            dataGridView1.BackgroundColor = Color.White;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(3, 3);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(489, 273);
-            dataGridView1.TabIndex = 2;
+            panel2.Controls.Add(resultClearBtn);
+            panel2.Dock = DockStyle.Left;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(200, 28);
+            panel2.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(exportBtn);
+            panel3.Dock = DockStyle.Right;
+            panel3.Location = new Point(356, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(200, 28);
+            panel3.TabIndex = 1;
+            // 
+            // resultClearBtn
+            // 
+            resultClearBtn.BackColor = Color.FromArgb(192, 57, 43);
+            resultClearBtn.FlatStyle = FlatStyle.Popup;
+            resultClearBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            resultClearBtn.ForeColor = Color.White;
+            resultClearBtn.Location = new Point(76, 2);
+            resultClearBtn.Name = "resultClearBtn";
+            resultClearBtn.Size = new Size(121, 23);
+            resultClearBtn.TabIndex = 18;
+            resultClearBtn.Text = "Ürítés";
+            resultClearBtn.UseVisualStyleBackColor = false;
+            // 
+            // exportBtn
+            // 
+            exportBtn.BackColor = Color.FromArgb(47, 110, 165);
+            exportBtn.FlatStyle = FlatStyle.Popup;
+            exportBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            exportBtn.ForeColor = Color.White;
+            exportBtn.Location = new Point(3, 3);
+            exportBtn.Name = "exportBtn";
+            exportBtn.Size = new Size(121, 23);
+            exportBtn.TabIndex = 19;
+            exportBtn.Text = "Exportálás";
+            exportBtn.UseVisualStyleBackColor = false;
             // 
             // QueryForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             ClientSize = new Size(800, 450);
-            Controls.Add(panel6);
-            Controls.Add(panel5);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
+            Controls.Add(rootPanel);
             FormBorderStyle = FormBorderStyle.None;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "QueryForm";
+            ShowIcon = false;
+            ShowInTaskbar = false;
             Text = "QueryForm";
-            panel1.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            panel2.ResumeLayout(false);
+            rootPanel.ResumeLayout(false);
+            leftPanel.ResumeLayout(false);
+            rightPanel.ResumeLayout(false);
+            actionsPanel.ResumeLayout(false);
+            gridViewPanel.ResumeLayout(false);
+            loadingBarPanel.ResumeLayout(false);
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
+            panel1.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
-            panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            panel2.ResumeLayout(false);
+            panel3.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panel1;
+        private Panel rightPanel;
         private Panel panel2;
-        private ProgressBar progressBar1;
-        private Panel panel3;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button1;
-        private Button loginBtn;
-        private Button button5;
-        private Button button6;
+        private ProgressBar queryProgressBar;
+        private Button resultClearBtn;
+        private Button exportBtn;
         private Panel panel4;
-        private Label label2;
         private Panel panel5;
         private Label label1;
         private Panel panel6;
-        private DataGridView dataGridView1;
+        private Panel rootPanel;
+        private Panel leftPanel;
+        private Panel gridViewPanel;
+        private Panel actionsPanel;
+        private Panel loadingBarPanel;
+        private Label label2;
+        private Panel panel1;
+        private Button adultChildQueryBtn;
+        private Button hQueryBtn;
+        private Button rgykChildSumBtn;
+        private Button rgykQueryBtn;
+        private Button hChildSumQueryBtn;
+        private Panel panel3;
     }
 }

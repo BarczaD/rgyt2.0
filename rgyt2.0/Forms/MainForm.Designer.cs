@@ -28,55 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            tabsPanel = new Panel();
-            button2 = new Button();
-            button1 = new Button();
             menuStrip1 = new MenuStrip();
             menüToolStripMenuItem = new ToolStripMenuItem();
             segítségToolStripMenuItem = new ToolStripMenuItem();
-            panel1 = new Panel();
             panel2 = new Panel();
             statusStrip1 = new StatusStrip();
             toolStripStatusLabel1 = new ToolStripStatusLabel();
             toolStripStatusLabel2 = new ToolStripStatusLabel();
             toolStripStatusLabel3 = new ToolStripStatusLabel();
             toolStripStatusLabel4 = new ToolStripStatusLabel();
-            button3 = new Button();
-            tabsPanel.SuspendLayout();
+            heightStatusText = new ToolStripStatusLabel();
+            widthStatusText = new ToolStripStatusLabel();
+            panel1 = new Panel();
+            contentPanel = new Panel();
+            tabsPanel = new Panel();
+            passChangeBtn = new Button();
+            settingsBtn = new Button();
+            queryBtn = new Button();
             menuStrip1.SuspendLayout();
             panel2.SuspendLayout();
             statusStrip1.SuspendLayout();
+            panel1.SuspendLayout();
+            tabsPanel.SuspendLayout();
             SuspendLayout();
-            // 
-            // tabsPanel
-            // 
-            tabsPanel.BackColor = Color.FromArgb(22, 50, 79);
-            tabsPanel.BorderStyle = BorderStyle.FixedSingle;
-            tabsPanel.Controls.Add(button3);
-            tabsPanel.Controls.Add(button2);
-            tabsPanel.Controls.Add(button1);
-            tabsPanel.Location = new Point(15, 27);
-            tabsPanel.Name = "tabsPanel";
-            tabsPanel.Size = new Size(770, 30);
-            tabsPanel.TabIndex = 0;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(153, 3);
-            button2.Name = "button2";
-            button2.Size = new Size(144, 23);
-            button2.TabIndex = 1;
-            button2.Text = "Beállíltások";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(3, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(144, 23);
-            button1.TabIndex = 0;
-            button1.Text = "Adatlekérés";
-            button1.UseVisualStyleBackColor = true;
             // 
             // menuStrip1
             // 
@@ -84,7 +58,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { menüToolStripMenuItem, segítségToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.Size = new Size(804, 24);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -100,30 +74,22 @@
             segítségToolStripMenuItem.Size = new Size(63, 20);
             segítségToolStripMenuItem.Text = "Segítség";
             // 
-            // panel1
-            // 
-            panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Location = new Point(15, 59);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(770, 350);
-            panel1.TabIndex = 2;
-            // 
             // panel2
             // 
             panel2.Controls.Add(statusStrip1);
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 426);
+            panel2.Location = new Point(0, 512);
             panel2.Name = "panel2";
-            panel2.Size = new Size(800, 24);
+            panel2.Size = new Size(804, 24);
             panel2.TabIndex = 3;
             // 
             // statusStrip1
             // 
             statusStrip1.BackColor = Color.FromArgb(234, 241, 247);
-            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, toolStripStatusLabel2, toolStripStatusLabel3, toolStripStatusLabel4 });
+            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, toolStripStatusLabel2, toolStripStatusLabel3, toolStripStatusLabel4, heightStatusText, widthStatusText });
             statusStrip1.Location = new Point(0, 2);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(800, 22);
+            statusStrip1.Size = new Size(804, 22);
             statusStrip1.TabIndex = 0;
             statusStrip1.Text = "statusStrip1";
             // 
@@ -133,7 +99,6 @@
             toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             toolStripStatusLabel1.Size = new Size(267, 17);
             toolStripStatusLabel1.Text = "Hódmezővásárhely MJV Kabinetiroda Informatika";
-            toolStripStatusLabel1.Click += toolStripStatusLabel1_Click;
             // 
             // toolStripStatusLabel2
             // 
@@ -141,7 +106,6 @@
             toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             toolStripStatusLabel2.Size = new Size(105, 17);
             toolStripStatusLabel2.Text = "06 62 530 100 / 240";
-            toolStripStatusLabel2.Click += toolStripStatusLabel2_Click;
             // 
             // toolStripStatusLabel3
             // 
@@ -149,7 +113,6 @@
             toolStripStatusLabel3.Name = "toolStripStatusLabel3";
             toolStripStatusLabel3.Size = new Size(181, 17);
             toolStripStatusLabel3.Text = "helpdesk@hodmezovasarhely.hu";
-            toolStripStatusLabel3.Click += toolStripStatusLabel3_Click;
             // 
             // toolStripStatusLabel4
             // 
@@ -157,48 +120,114 @@
             toolStripStatusLabel4.Size = new Size(28, 17);
             toolStripStatusLabel4.Text = "v1.0";
             // 
-            // button3
+            // heightStatusText
             // 
-            button3.Location = new Point(303, 3);
-            button3.Name = "button3";
-            button3.Size = new Size(144, 23);
-            button3.TabIndex = 2;
-            button3.Text = "Jelszómódosítás";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click_1;
+            heightStatusText.Name = "heightStatusText";
+            heightStatusText.Size = new Size(17, 17);
+            heightStatusText.Text = "h:";
+            // 
+            // widthStatusText
+            // 
+            widthStatusText.Name = "widthStatusText";
+            widthStatusText.Size = new Size(19, 17);
+            widthStatusText.Text = "w:";
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(contentPanel);
+            panel1.Controls.Add(tabsPanel);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 24);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(804, 488);
+            panel1.TabIndex = 4;
+            // 
+            // contentPanel
+            // 
+            contentPanel.AutoSize = true;
+            contentPanel.BorderStyle = BorderStyle.FixedSingle;
+            contentPanel.Dock = DockStyle.Fill;
+            contentPanel.Location = new Point(0, 31);
+            contentPanel.Name = "contentPanel";
+            contentPanel.Size = new Size(804, 457);
+            contentPanel.TabIndex = 4;
+            // 
+            // tabsPanel
+            // 
+            tabsPanel.AutoSize = true;
+            tabsPanel.BackColor = Color.FromArgb(22, 50, 79);
+            tabsPanel.BorderStyle = BorderStyle.FixedSingle;
+            tabsPanel.Controls.Add(passChangeBtn);
+            tabsPanel.Controls.Add(settingsBtn);
+            tabsPanel.Controls.Add(queryBtn);
+            tabsPanel.Dock = DockStyle.Top;
+            tabsPanel.Location = new Point(0, 0);
+            tabsPanel.Name = "tabsPanel";
+            tabsPanel.Size = new Size(804, 31);
+            tabsPanel.TabIndex = 3;
+            // 
+            // passChangeBtn
+            // 
+            passChangeBtn.ForeColor = Color.FromArgb(91, 112, 131);
+            passChangeBtn.Location = new Point(303, 3);
+            passChangeBtn.Name = "passChangeBtn";
+            passChangeBtn.Size = new Size(144, 23);
+            passChangeBtn.TabIndex = 2;
+            passChangeBtn.Text = "Jelszómódosítás";
+            passChangeBtn.UseVisualStyleBackColor = true;
+            // 
+            // settingsBtn
+            // 
+            settingsBtn.ForeColor = Color.FromArgb(91, 112, 131);
+            settingsBtn.Location = new Point(153, 3);
+            settingsBtn.Name = "settingsBtn";
+            settingsBtn.Size = new Size(144, 23);
+            settingsBtn.TabIndex = 1;
+            settingsBtn.Text = "Beállíltások";
+            settingsBtn.UseVisualStyleBackColor = true;
+            // 
+            // queryBtn
+            // 
+            queryBtn.ForeColor = Color.FromArgb(91, 112, 131);
+            queryBtn.Location = new Point(3, 3);
+            queryBtn.Name = "queryBtn";
+            queryBtn.Size = new Size(144, 23);
+            queryBtn.TabIndex = 0;
+            queryBtn.Text = "Adatlekérés";
+            queryBtn.UseVisualStyleBackColor = true;
+            queryBtn.Click += queryBtn_Click;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(247, 250, 253);
-            ClientSize = new Size(800, 450);
-            Controls.Add(panel2);
+            ClientSize = new Size(804, 536);
             Controls.Add(panel1);
-            Controls.Add(tabsPanel);
+            Controls.Add(panel2);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
+            MinimumSize = new Size(800, 525);
             Name = "MainForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "RGYT 2.0";
-            tabsPanel.ResumeLayout(false);
+            Resize += MainForm_Resize;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             statusStrip1.ResumeLayout(false);
             statusStrip1.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            tabsPanel.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Panel tabsPanel;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem menüToolStripMenuItem;
-        private Button button1;
-        private Panel panel1;
-        private Button button2;
         private Panel panel2;
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel toolStripStatusLabel1;
@@ -206,6 +235,15 @@
         private ToolStripStatusLabel toolStripStatusLabel3;
         private ToolStripMenuItem segítségToolStripMenuItem;
         private ToolStripStatusLabel toolStripStatusLabel4;
-        private Button button3;
+        private Panel panel1;
+        private Panel contentPanel;
+        private Panel tabsPanel;
+        private Button passChangeBtn;
+        private Button settingsBtn;
+        private Button queryBtn;
+            
+        private Form? _currentContentForm;
+        private ToolStripStatusLabel heightStatusText;
+        private ToolStripStatusLabel widthStatusText;
     }
 }
