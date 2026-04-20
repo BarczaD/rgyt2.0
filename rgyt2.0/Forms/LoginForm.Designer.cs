@@ -33,11 +33,11 @@
             pwdTextBox = new TextBox();
             usernameTextBox = new TextBox();
             panel1 = new Panel();
-            loginBtn = new Button();
             panel2 = new Panel();
-            label2 = new Label();
             label3 = new Label();
+            label2 = new Label();
             panel3 = new Panel();
+            loginBtn = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -91,20 +91,6 @@
             panel1.Size = new Size(584, 286);
             panel1.TabIndex = 6;
             // 
-            // loginBtn
-            // 
-            loginBtn.BackColor = Color.FromArgb(47, 110, 165);
-            loginBtn.FlatStyle = FlatStyle.Flat;
-            loginBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            loginBtn.ForeColor = Color.White;
-            loginBtn.Location = new Point(255, 223);
-            loginBtn.Name = "loginBtn";
-            loginBtn.Size = new Size(75, 23);
-            loginBtn.TabIndex = 6;
-            loginBtn.Text = "Belépés";
-            loginBtn.UseVisualStyleBackColor = false;
-            loginBtn.Click += loginBtnClick;
-            // 
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(22, 50, 79);
@@ -118,17 +104,6 @@
             panel2.Size = new Size(584, 100);
             panel2.TabIndex = 7;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 19F, FontStyle.Bold);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(42, 11);
-            label2.Name = "label2";
-            label2.Size = new Size(500, 36);
-            label2.TabIndex = 0;
-            label2.Text = "Rendszeres Gyermekvédelmi Támogatás";
-            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -140,13 +115,38 @@
             label3.TabIndex = 1;
             label3.Text = "Adatkinyerő Rendszer";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 19F, FontStyle.Bold);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(42, 11);
+            label2.Name = "label2";
+            label2.Size = new Size(500, 36);
+            label2.TabIndex = 0;
+            label2.Text = "Rendszeres Gyermekvédelmi Támogatás";
+            // 
             // panel3
             // 
             panel3.Dock = DockStyle.Bottom;
-            panel3.Location = new Point(0, -86);
+            panel3.Location = new Point(0, 50);
             panel3.Name = "panel3";
-            panel3.Size = new Size(584, 186);
+            panel3.Size = new Size(584, 50);
             panel3.TabIndex = 8;
+            // 
+            // loginBtn
+            // 
+            loginBtn.BackColor = Color.FromArgb(47, 110, 165);
+            loginBtn.FlatStyle = FlatStyle.Flat;
+            loginBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            loginBtn.ForeColor = Color.White;
+            loginBtn.Location = new Point(255, 223);
+            loginBtn.Name = "loginBtn";
+            loginBtn.Size = new Size(75, 23);
+            loginBtn.TabIndex = 6;
+            loginBtn.Text = "Belépés";
+            loginBtn.UseVisualStyleBackColor = false;
+            loginBtn.Click += loginBtnClick;
             // 
             // LoginForm
             // 
