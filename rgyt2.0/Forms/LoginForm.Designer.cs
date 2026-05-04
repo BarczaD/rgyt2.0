@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             label1 = new Label();
             usernameLabel = new Label();
             pwdTextBox = new TextBox();
@@ -155,6 +156,7 @@
             BackColor = Color.White;
             ClientSize = new Size(584, 286);
             Controls.Add(panel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Bejelentkezés";
@@ -178,17 +180,36 @@
             string username = usernameTextBox.Text;
             string password = pwdTextBox.Text;
 
-            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+
+            if (string.IsNullOrWhiteSpace(username) ||
+                    string.IsNullOrWhiteSpace(password))
             {
-                MessageBox.Show("Hiányzó felhasználónév vagy jelszó!");
+                MessageBox.Show(
+                    "Add meg a felhasználónevet és a jelszót.",
+                    "Belépés",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
                 return;
             }
 
-            MessageBox.Show("Sikeres Belépés! \nGyőződjetek meg róla, hogy senki sincs belépve a Fox-ba!");
+            var user = Program.AuthService.Login(username, password, out var error);
 
-            var mainForm = new MainForm();
-            mainForm.Show();
-            this.Hide();
+            if (user == null)
+            {
+                MessageBox.Show(
+                    error,
+                    "Belépés sikertelen",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+                return;
+            }
+
+            Program.CurrentUser = user;
+
+            DialogResult = DialogResult.OK;
+            Close();
 
         }
 

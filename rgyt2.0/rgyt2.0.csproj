@@ -7,21 +7,32 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>Resources\rgyt2.0.ico</ApplicationIcon>
+    <PackageIcon>rgyt2.0.ico</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="Resources\rgyt2.0.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Controls\" />
-    <Folder Include="Database\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>
     <None Update="appsettings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="Resources\rgyt2.0.ico">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.1.0" />
+    <PackageReference Include="ClosedXML" Version="0.105.0" />
+    <PackageReference Include="DbfDataReader" Version="1.1.0" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.5" />
   </ItemGroup>
 

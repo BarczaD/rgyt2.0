@@ -28,10 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "SettingsForm";
+            SuspendLayout();
+            // 
+            // SettingsForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(784, 411);
+            ControlBox = false;
+            MaximizeBox = false;
+            MdiChildrenMinimizedAnchorBottom = false;
+            MinimizeBox = false;
+            Name = "SettingsForm";
+            ShowIcon = false;
+            ShowInTaskbar = false;
+            Text = "SettingsForm";
+            ResumeLayout(false);
         }
 
         #endregion

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             menuStrip1 = new MenuStrip();
             menüToolStripMenuItem = new ToolStripMenuItem();
             segítségToolStripMenuItem = new ToolStripMenuItem();
@@ -37,11 +38,10 @@
             toolStripStatusLabel2 = new ToolStripStatusLabel();
             toolStripStatusLabel3 = new ToolStripStatusLabel();
             toolStripStatusLabel4 = new ToolStripStatusLabel();
-            heightStatusText = new ToolStripStatusLabel();
-            widthStatusText = new ToolStripStatusLabel();
             panel1 = new Panel();
             contentPanel = new Panel();
             tabsPanel = new Panel();
+            userManagementBtn = new Button();
             passChangeBtn = new Button();
             settingsBtn = new Button();
             queryBtn = new Button();
@@ -67,12 +67,14 @@
             menüToolStripMenuItem.Name = "menüToolStripMenuItem";
             menüToolStripMenuItem.Size = new Size(56, 20);
             menüToolStripMenuItem.Text = "Kilépés";
+            menüToolStripMenuItem.Click += menüToolStripMenuItem_Click;
             // 
             // segítségToolStripMenuItem
             // 
             segítségToolStripMenuItem.Name = "segítségToolStripMenuItem";
             segítségToolStripMenuItem.Size = new Size(63, 20);
             segítségToolStripMenuItem.Text = "Segítség";
+            segítségToolStripMenuItem.Click += segítségToolStripMenuItem_Click;
             // 
             // panel2
             // 
@@ -86,7 +88,7 @@
             // statusStrip1
             // 
             statusStrip1.BackColor = Color.FromArgb(234, 241, 247);
-            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, toolStripStatusLabel2, toolStripStatusLabel3, toolStripStatusLabel4, heightStatusText, widthStatusText });
+            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, toolStripStatusLabel2, toolStripStatusLabel3, toolStripStatusLabel4 });
             statusStrip1.Location = new Point(0, 2);
             statusStrip1.Name = "statusStrip1";
             statusStrip1.Size = new Size(804, 22);
@@ -120,18 +122,6 @@
             toolStripStatusLabel4.Size = new Size(28, 17);
             toolStripStatusLabel4.Text = "v1.0";
             // 
-            // heightStatusText
-            // 
-            heightStatusText.Name = "heightStatusText";
-            heightStatusText.Size = new Size(17, 17);
-            heightStatusText.Text = "h:";
-            // 
-            // widthStatusText
-            // 
-            widthStatusText.Name = "widthStatusText";
-            widthStatusText.Size = new Size(19, 17);
-            widthStatusText.Text = "w:";
-            // 
             // panel1
             // 
             panel1.Controls.Add(contentPanel);
@@ -157,6 +147,7 @@
             tabsPanel.AutoSize = true;
             tabsPanel.BackColor = Color.FromArgb(22, 50, 79);
             tabsPanel.BorderStyle = BorderStyle.FixedSingle;
+            tabsPanel.Controls.Add(userManagementBtn);
             tabsPanel.Controls.Add(passChangeBtn);
             tabsPanel.Controls.Add(settingsBtn);
             tabsPanel.Controls.Add(queryBtn);
@@ -165,6 +156,17 @@
             tabsPanel.Name = "tabsPanel";
             tabsPanel.Size = new Size(804, 31);
             tabsPanel.TabIndex = 3;
+            // 
+            // userManagementBtn
+            // 
+            userManagementBtn.ForeColor = Color.FromArgb(91, 112, 131);
+            userManagementBtn.Location = new Point(453, 3);
+            userManagementBtn.Name = "userManagementBtn";
+            userManagementBtn.Size = new Size(144, 23);
+            userManagementBtn.TabIndex = 3;
+            userManagementBtn.Text = "Felhasználókezelés";
+            userManagementBtn.UseVisualStyleBackColor = true;
+            userManagementBtn.Click += userManagementBtn_Click;
             // 
             // passChangeBtn
             // 
@@ -206,12 +208,12 @@
             Controls.Add(panel1);
             Controls.Add(panel2);
             Controls.Add(menuStrip1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
             MinimumSize = new Size(800, 525);
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "RGYT 2.0";
-            Resize += MainForm_Resize;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             panel2.ResumeLayout(false);
@@ -243,7 +245,6 @@
         private Button queryBtn;
             
         private Form? _currentContentForm;
-        private ToolStripStatusLabel heightStatusText;
-        private ToolStripStatusLabel widthStatusText;
+        private Button userManagementBtn;
     }
 }

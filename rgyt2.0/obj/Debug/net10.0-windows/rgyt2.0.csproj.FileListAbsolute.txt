@@ -52,3 +52,14 @@ D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\obj\Debug\net10.0-windows\rgyt2._
 D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\obj\Debug\net10.0-windows\rgyt2._0.Forms.QueryForm.resources
 D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\obj\Debug\net10.0-windows\rgyt2._0.Forms.SettingsForm.resources
 D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\obj\Debug\net10.0-windows\rgyt2._0.Forms.temp.resources
+D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\bin\Debug\net10.0-windows\DbfDataReader.dll
+D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\obj\Debug\net10.0-windows\rgyt2._0.Forms.DatabasePreviewForm.resources
+D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\bin\Debug\net10.0-windows\ClosedXML.dll
+D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\bin\Debug\net10.0-windows\ClosedXML.Parser.dll
+D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\bin\Debug\net10.0-windows\DocumentFormat.OpenXml.dll
+D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\bin\Debug\net10.0-windows\DocumentFormat.OpenXml.Framework.dll
+D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\bin\Debug\net10.0-windows\ExcelNumberFormat.dll
+D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\bin\Debug\net10.0-windows\RBush.dll
+D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\bin\Debug\net10.0-windows\SixLabors.Fonts.dll
+D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\bin\Debug\net10.0-windows\BCrypt.Net-Next.dll
+D:\Prog\hivatal\rgyt kiváltás\source\rgyt2.0\obj\Debug\net10.0-windows\rgyt2._0.Forms.UserManagementForm.resources

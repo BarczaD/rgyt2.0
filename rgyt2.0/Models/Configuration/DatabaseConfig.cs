@@ -4,8 +4,11 @@ using System.Text;
 
 namespace rgyt2._0.Models.Configuration
 {
-    internal class DatabaseConfig
+    public class DatabaseConfig
     {
+
+        public string DbfFolder { get; set; } = "";
+        public string SqliteFile { get; set; } = "";
 
     }
 }

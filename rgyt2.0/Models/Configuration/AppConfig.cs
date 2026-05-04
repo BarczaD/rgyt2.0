@@ -4,7 +4,8 @@ using System.Text;
 
 namespace rgyt2._0.Models.Configuration
 {
-    internal class AppConfig
+    public class AppConfig
     {
+        public DatabaseConfig Database { get; set; } = new();
     }
 }

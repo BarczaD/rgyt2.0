@@ -17,7 +17,16 @@ namespace rgyt2._0.Forms
 
         private void settingsBtn_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Még fejlesztés alatt!");
+        }
 
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            
+            userManagementBtn.Visible =
+                Program.CurrentUser != null &&
+                Program.CurrentUser.IsAdmin;
         }
 
         private void LoadContentForm(Form form)
@@ -32,7 +41,7 @@ namespace rgyt2._0.Forms
 
             form.TopLevel = false;
             form.FormBorderStyle = FormBorderStyle.None;
-            form.Dock = DockStyle.None; // fontos!
+            form.Dock = DockStyle.None;
             form.AutoSize = true;
             form.AutoSizeMode = AutoSizeMode.GrowAndShrink;
 
@@ -46,17 +55,19 @@ namespace rgyt2._0.Forms
             LoadContentForm(new QueryForm());
         }
 
-
-        private void MainForm_Resize(object sender, EventArgs e)
+        private void menüToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            UpdateWindowSizeStatus();
+            Application.Exit();
         }
 
-        private void UpdateWindowSizeStatus()
+        private void userManagementBtn_Click(object sender, EventArgs e)
         {
-            widthStatusText.Text = $"w: {ClientSize.Width}px";
-            heightStatusText.Text = $"h: {ClientSize.Height}px";
+            LoadContentForm(new UserManagementForm());
         }
 
+        private void segítségToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("helpdesk@hodmezovasarhely.hu\n240-es mellék");
+        }
     }
 }
