@@ -177,6 +177,7 @@
             passChangeBtn.TabIndex = 2;
             passChangeBtn.Text = "Jelszómódosítás";
             passChangeBtn.UseVisualStyleBackColor = true;
+            passChangeBtn.Click += passChangeBtn_Click;
             // 
             // settingsBtn
             // 
@@ -187,6 +188,7 @@
             settingsBtn.TabIndex = 1;
             settingsBtn.Text = "Beállíltások";
             settingsBtn.UseVisualStyleBackColor = true;
+            settingsBtn.Click += settingsBtn_Click;
             // 
             // queryBtn
             // 

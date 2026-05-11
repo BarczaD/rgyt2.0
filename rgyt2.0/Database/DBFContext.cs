@@ -27,7 +27,15 @@ public class DbfContext
         if (_children == null)
             LoadChildren();
 
-        return _children!;
+
+        return _children!
+            .Where(c =>
+                c.Szuloazon != 0 &&
+                !string.IsNullOrWhiteSpace(c.Gyereknev) &&
+                c.Gyereknev != "*"
+            )
+            .ToList();
+
     }
 
     public IReadOnlyList<Parent> GetParents()
@@ -35,7 +43,15 @@ public class DbfContext
         if (_parents == null)
             LoadParents();
 
-        return _parents!;
+
+        return _parents!
+            .Where(p =>
+                p.Szuloazon != 0 &&
+                !string.IsNullOrWhiteSpace(p.Szulonev) &&
+                p.Szulonev != "*"
+            )
+            .ToList();
+
     }
 
 
@@ -115,8 +131,8 @@ public class DbfContext
         _children = new List<Child>();
 
         var path = Path.Combine(
-            Program.Config.Config.Database.DbfFolder,
-            "gyerek.dbf"
+            Program.Config.Settings.Database.DbfFolder,
+            "gyfix.dbf"
         );
 
         if (!File.Exists(path))
@@ -183,6 +199,13 @@ public class DbfContext
                         ParseString(Get(map, "JOGDATUM"))
                     );
 
+                    if (child.Szuloazon == 0)
+                        continue;
+
+                    if (string.IsNullOrWhiteSpace(child.Gyereknev))
+                        continue;
+
+
                     _children.Add(child);
                     //rowIndex++;
                 }
@@ -218,8 +241,8 @@ public class DbfContext
         _parents = new List<Parent>();
 
         var path = Path.Combine(
-            Program.Config.Config.Database.DbfFolder,
-            "szulok.dbf"
+            Program.Config.Settings.Database.DbfFolder,
+            "szfix.dbf"
         );
 
         if (!File.Exists(path))
@@ -254,6 +277,7 @@ public class DbfContext
 
             while (reader.Read())
             {
+
                 try
                 {
                     var map = new Dictionary<string, object?>(

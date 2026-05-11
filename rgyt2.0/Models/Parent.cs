@@ -28,6 +28,7 @@ namespace rgyt2._0.Models
         public short Hhjog1 { get; set; }
         public short Hhjog2 { get; set; }
         public short Hhjog3 { get; set; }
+        public bool Deleted { get; set; }
 
 
         public Parent(

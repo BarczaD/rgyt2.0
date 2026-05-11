@@ -25,6 +25,7 @@ namespace rgyt2._0.Models
         public int Hhjog2 { get; set; }
         public int Hhjog3 { get; set; }
         public DateOnly? Jogdatum { get; set; }
+        public bool Deleted { get; set; }
 
         public Child(
                 int gyerekid,

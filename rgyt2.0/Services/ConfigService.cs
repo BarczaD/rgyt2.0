@@ -1,22 +1,35 @@
 ﻿using rgyt2._0.Models.Configuration;
 using System.Text.Json;
 
-public class ConfigService
+namespace rgyt2._0.Services
 {
-    public AppConfig Config { get; private set; } = new();
-
-    public void Load()
+    public class ConfigService
     {
-        var baseDir = AppContext.BaseDirectory;
-        var configPath = Path.Combine(baseDir, "appsettings.json");
+        private const string ConfigFileName = "appsettings.json";
 
-        var json = File.ReadAllText(configPath);
-        Config = JsonSerializer.Deserialize<AppConfig>(json)!;
+        public AppConfig Settings { get; private set; } = new();
 
-        Config.Database.DbfFolder =
-            Path.GetFullPath(Path.Combine(baseDir, Config.Database.DbfFolder));
+        public void Load()
+        {
+            if (!File.Exists(ConfigFileName))
+            {
+                Save();
+                return;
+            }
 
-        Config.Database.SqliteFile =
-            Path.GetFullPath(Path.Combine(baseDir, Config.Database.SqliteFile));
+            var json = File.ReadAllText(ConfigFileName);
+            Settings = JsonSerializer.Deserialize<AppConfig>(json)
+                       ?? new AppConfig();
+        }
+
+        public void Save()
+        {
+            var json = JsonSerializer.Serialize(
+                Settings,
+                new JsonSerializerOptions { WriteIndented = true }
+            );
+
+            File.WriteAllText(ConfigFileName, json);
+        }
     }
 }

@@ -32,23 +32,42 @@ namespace rgyt2._0.Forms
 
             submitBtn.Click += submitBtn_Click;
             usersGridView.CellDoubleClick += usersGridView_CellDoubleClick;
+            usersGridView.CellContentClick += usersGridView_CellContentClick;
         }
 
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
-
-            ApplyTheme();
-            ConfigureInputs();
-            ConfigureGrid();
             LoadUsers();
+            ApplyTheme();
         }
 
-        private void ConfigureInputs()
+        private void ApplyCreateUserStyling()
         {
+            panel1.BackColor = Color.FromArgb(240, 240, 240);
+            panel2.BackColor = Color.White;
+
+            Font titleFont = new Font("Segoe UI", 14F, FontStyle.Bold);
+            Font baseFont = new Font("Segoe UI", 9F);
+
+            label1.Font = titleFont;
+
+            foreach (Control c in panel2.Controls)
+                c.Font = baseFont;
+
+            usernameTextBox.Width = 200;
+            passwordTextBox.Width = 200;
+            passwordConfirmPassTextBox.Width = 200;
+
             passwordTextBox.UseSystemPasswordChar = true;
             passwordConfirmPassTextBox.UseSystemPasswordChar = true;
+
+            submitBtn.FlatStyle = FlatStyle.Flat;
+            submitBtn.FlatAppearance.BorderSize = 0;
+            submitBtn.BackColor = Color.FromArgb(47, 110, 165);
+            submitBtn.ForeColor = Color.White;
         }
+
 
         private void LoadUsers()
         {
@@ -69,7 +88,26 @@ namespace rgyt2._0.Forms
 
             if (usersGridView.Columns[nameof(User.IsActive)] != null)
                 usersGridView.Columns[nameof(User.IsActive)].HeaderText = "Aktív";
+
+            AddResetPasswordColumn();
         }
+
+        private void AddResetPasswordColumn()
+        {
+            if (usersGridView.Columns["ResetPassword"] != null)
+                return;
+
+            var btnCol = new DataGridViewButtonColumn
+            {
+                Name = "ResetPassword",
+                HeaderText = "Jelszó",
+                Text = "Reset",
+                UseColumnTextForButtonValue = true
+            };
+
+            usersGridView.Columns.Add(btnCol);
+        }
+
 
         private void ClearCreateUserForm()
         {
@@ -243,6 +281,37 @@ namespace rgyt2._0.Forms
                 submitBtn.BackColor = primaryBlue;
             };
         }
+
+        private void usersGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
+
+            if (usersGridView.Columns[e.ColumnIndex].Name != "ResetPassword")
+                return;
+
+            var user = _users[e.RowIndex];
+
+            var confirm = MessageBox.Show(
+                $"Biztosan visszaállítod {user.Username} jelszavát?\n\nÚj jelszó: Jelszo123",
+                "Jelszó visszaállítás",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning
+            );
+
+            if (confirm != DialogResult.Yes)
+                return;
+
+            _userRepository.ResetPasswordToDefault(user.Id);
+
+            MessageBox.Show(
+                "A jelszó sikeresen visszaállítva (Jelszo123).",
+                "Kész",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+        }
+
 
         private void ConfigureGrid()
         {

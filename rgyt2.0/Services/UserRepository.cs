@@ -87,5 +87,27 @@ namespace rgyt2._0.Services
 
             cmd.ExecuteNonQuery();
         }
+
+        public void ResetPasswordToDefault(int userId)
+        {
+            const string defaultPassword = "Jelszo123";
+            string hash = BCrypt.Net.BCrypt.HashPassword(defaultPassword);
+
+            using var conn = _db.CreateConnection();
+            conn.Open();
+
+            using var cmd = conn.CreateCommand();
+            cmd.CommandText = """
+                UPDATE Users
+                SET PasswordHash = @hash
+                WHERE Id = @id
+            """;
+
+            cmd.Parameters.AddWithValue("@hash", hash);
+            cmd.Parameters.AddWithValue("@id", userId);
+
+            cmd.ExecuteNonQuery();
+        }
+
     }
 }

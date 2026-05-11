@@ -17,13 +17,27 @@ namespace rgyt2._0.Forms
 
         private void settingsBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Még fejlesztés alatt!");
+            using var form = new SettingsForm(
+                Program.Config.Settings.Database.DbfFolder
+            );
+
+            if (form.ShowDialog(this) == DialogResult.OK)
+            {
+                Program.Config.Settings.Database.DbfFolder =
+                    form.SelectedDbfFolder;
+
+                Program.Config.Save();
+
+                Program.DbfContext = new DbfContext(
+                    Program.Config.Settings.Database.DbfFolder
+                );
+            }
         }
 
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
-            
+
             userManagementBtn.Visible =
                 Program.CurrentUser != null &&
                 Program.CurrentUser.IsAdmin;
@@ -68,6 +82,12 @@ namespace rgyt2._0.Forms
         private void segítségToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("helpdesk@hodmezovasarhely.hu\n240-es mellék");
+        }
+
+        private void passChangeBtn_Click(object sender, EventArgs e)
+        {
+            using var form = new PasswordChangeForm();
+            form.ShowDialog(this);
         }
     }
 }

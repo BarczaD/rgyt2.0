@@ -41,6 +41,7 @@
             resultClearBtn = new Button();
             leftPanel = new Panel();
             panel1 = new Panel();
+            yearIntervalTextBox = new TextBox();
             payoutPerChildTextField = new TextBox();
             adultChildQueryBtn = new Button();
             hQueryBtn = new Button();
@@ -185,6 +186,7 @@
             resultClearBtn.TabIndex = 18;
             resultClearBtn.Text = "Ürítés";
             resultClearBtn.UseVisualStyleBackColor = false;
+            resultClearBtn.Click += resultClearBtn_Click;
             // 
             // leftPanel
             // 
@@ -199,6 +201,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(yearIntervalTextBox);
             panel1.Controls.Add(payoutPerChildTextField);
             panel1.Controls.Add(adultChildQueryBtn);
             panel1.Controls.Add(hQueryBtn);
@@ -211,9 +214,17 @@
             panel1.Size = new Size(220, 331);
             panel1.TabIndex = 11;
             // 
+            // yearIntervalTextBox
+            // 
+            yearIntervalTextBox.Location = new Point(3, 206);
+            yearIntervalTextBox.Name = "yearIntervalTextBox";
+            yearIntervalTextBox.Size = new Size(211, 23);
+            yearIntervalTextBox.TabIndex = 28;
+            yearIntervalTextBox.Text = "Születési év (pl. 2012 - 2020)";
+            // 
             // payoutPerChildTextField
             // 
-            payoutPerChildTextField.Location = new Point(6, 150);
+            payoutPerChildTextField.Location = new Point(6, 177);
             payoutPerChildTextField.Name = "payoutPerChildTextField";
             payoutPerChildTextField.Size = new Size(211, 23);
             payoutPerChildTextField.TabIndex = 27;
@@ -225,7 +236,7 @@
             adultChildQueryBtn.FlatStyle = FlatStyle.Popup;
             adultChildQueryBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             adultChildQueryBtn.ForeColor = Color.FromArgb(91, 112, 131);
-            adultChildQueryBtn.Location = new Point(6, 183);
+            adultChildQueryBtn.Location = new Point(6, 148);
             adultChildQueryBtn.Name = "adultChildQueryBtn";
             adultChildQueryBtn.Size = new Size(211, 23);
             adultChildQueryBtn.TabIndex = 26;
@@ -389,5 +400,6 @@
         private Panel panel3;
         private DataGridView queryResultGridView;
         private TextBox payoutPerChildTextField;
+        private TextBox yearIntervalTextBox;
     }
 }
