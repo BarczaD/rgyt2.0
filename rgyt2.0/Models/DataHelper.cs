@@ -7,55 +7,37 @@ namespace rgyt2._0.Models
 {
     public class DataHelper
     {
-        public static DateOnly? ParseDbfDate(object? value)
+        public static DateOnly? ParseDbfDate(string? value)
         {
-            if (value == null)
+            if (string.IsNullOrWhiteSpace(value))
                 return null;
 
-            // Ha már DateOnly
-            if (value is DateOnly d)
-                return d;
-
-            // Ha DateTime
-            if (value is DateTime dt)
-                return DateOnly.FromDateTime(dt);
-
-            var s = value.ToString()?.Trim();
-            if (string.IsNullOrEmpty(s))
-                return null;
+            var s = value.Trim();
 
             string[] formats =
             {
-                "yy/MM/dd",
-                "yyyy/MM/dd",
-                "yyyy-MM-dd",
+                "dd/MM/yy",
+                "d/M/yy",
+                "dd/MM/yyyy",
+                "d/M/yyyy",
                 "yyyy.MM.dd",
-                "MM/dd/yyyy",
-                "M/d/yyyy",
-                "MM/dd/yyyy HH:mm:ss",
-                "M/d/yyyy HH:mm:ss"
+                "yyyy-MM-dd",
+                "yyyy/MM/dd"
             };
 
-            if (DateTime.TryParseExact(
+            if (DateOnly.TryParseExact(
                     s,
                     formats,
                     CultureInfo.InvariantCulture,
                     DateTimeStyles.None,
-                    out var parsed))
+                    out var date))
             {
-                return DateOnly.FromDateTime(parsed);
+                return date;
             }
 
-            if (DateTime.TryParse(
-                    s,
-                    CultureInfo.InvariantCulture,
-                    DateTimeStyles.None,
-                    out parsed))
-            {
-                return DateOnly.FromDateTime(parsed);
-            }
+            if (DateTime.TryParse(s, out var dt))
+                return DateOnly.FromDateTime(dt);
 
-            // nincs használható dátum
             return null;
         }
     }

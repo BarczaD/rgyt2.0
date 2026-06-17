@@ -20,7 +20,8 @@ namespace rgyt2._0.Forms
                         sz => sz.Szuloazon,
                         (gy, sz) => new { gy, sz }
                     )
-                    .Where(x => x.gy.Hh > 1);
+                    .Where(x => x.gy.Hh > 1)
+                    .Where(x => x.sz.Szulotipus == 1);
 
             if (TryParseYearInterval(yearIntervalTextBox.Text, out int fromYear, out int toYear))
             {
@@ -39,13 +40,25 @@ namespace rgyt2._0.Forms
                     SzületésiIdő = x.gy.Szulido.HasValue
                         ? x.gy.Szulido.Value.ToString("yyyy.MM.dd")
                         : "",
+                    Intézmény = x.gy.IntezmenyNev,
                     Szülő = x.sz.Szulonev,
-                    Lakcím = $"{x.sz.Utca} {x.sz.Hsz}",
-                    HH = x.gy.Hh
+                    Irányítószám = x.gy.Irsz,
+                    Utca = x.gy.Utca,
+                    Házszám = x.gy.Hsz,
+                    HH = x.gy.Hh,
+                    FelülvizsgálatDátuma = FormatDate(x.gy.Jogdatum),
                 })
                 .ToList();
 
             queryResultGridView.DataSource = queryResult;
+        }
+
+
+        private string FormatDate(DateOnly? date)
+        {
+            return date.HasValue
+                ? date.Value.ToString("yyyy.MM.dd")
+                : "";
         }
 
         private void rgykQueryBtn_Click(object sender, EventArgs e)
@@ -79,8 +92,9 @@ namespace rgyt2._0.Forms
                         ? x.gy.Szulido.Value.ToString("yyyy.MM.dd")
                         : "",
                     Szülő = x.sz.Szulonev,
-                    Lakcím = $"{x.sz.Utca} {x.sz.Hsz}",
-                    HH = x.gy.Hh
+                    Lakcím = $"{x.gy.Irsz} {x.gy.Utca} {x.gy.Hsz}",
+                    HH = x.gy.Hh,
+                    FelülvizsgálatDátuma = FormatDate(x.sz.Felulvizsg)
                 })
                 .ToList();
 

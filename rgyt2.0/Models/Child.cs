@@ -16,7 +16,7 @@ namespace rgyt2._0.Models
         public int Tajszam { get; set; }
         public DateOnly? Szulido { get; set; }
         public string Anyjaneve { get; set; }
-        public int Intezmeny { get; set; }
+        public string IntezmenyNev { get; set; }
         public int Gyerektipus { get; set; }
         public int Osszeg { get; set; }
         public int Szamlaszam { get; set; }
@@ -37,7 +37,7 @@ namespace rgyt2._0.Models
                 int tajszam,
                 string szulido,
                 string anyjaneve,
-                int intezmeny,
+                string intezmenyNev,
                 int gyerektipus,
                 int osszeg,
                 int szamlaszam,
@@ -58,7 +58,7 @@ namespace rgyt2._0.Models
             Szulido = DataHelper.ParseDbfDate(szulido);
             Anyjaneve = anyjaneve;
 
-            Intezmeny = intezmeny;
+            IntezmenyNev = intezmenyNev;
             Gyerektipus = gyerektipus;
             Osszeg = osszeg;
             Szamlaszam = szamlaszam;

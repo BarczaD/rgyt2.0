@@ -15,6 +15,7 @@ public class DbfContext
 
     private List<Child>? _children;   // gyfix
     private List<Parent>? _parents;   // szfix
+    private List<Institution>? _institutions;
 
     public DbfContext(string basePath)
     {
@@ -54,8 +55,15 @@ public class DbfContext
 
     }
 
+    public IReadOnlyList<Institution> GetInstitutions()
+    {
+        if (_institutions == null)
+            LoadInstitutions();
 
-    private static int ParseInt(object value)
+        return _institutions!;
+    }
+
+    private static int ParseInt(object? value)
     {
         if (value == null || value == DBNull.Value)
             return 0;
@@ -63,8 +71,17 @@ public class DbfContext
         return value switch
         {
             int i => i,
+            short sh => sh,
             long l => (int)l,
-            string s when int.TryParse(s, out var r) => r,
+            decimal d => (int)d,
+            double db => (int)db,
+            float f => (int)f,
+            string s when int.TryParse(s.Trim(), out var r) => r,
+            string s when decimal.TryParse(
+                s.Trim(),
+                NumberStyles.Any,
+                CultureInfo.InvariantCulture,
+                out var dr) => (int)dr,
             _ => 0
         };
     }
@@ -155,17 +172,21 @@ public class DbfContext
             {
                 columns.Add(reader.GetName(i).Trim());
             }
-            /*
-            var sbFields = new StringBuilder();
-            sbFields.AppendLine("GYEREK.DBF mezők:");
-            for (int i = 0; i < columns.Count; i++)
-                sbFields.AppendLine($"{i}: {columns[i]}");
 
-            Debug.WriteLine(sbFields.ToString());
-            // MessageBox.Show(sbFields.ToString(), "DBF mezők");
-            */
+
+
+            if (_institutions == null)
+                LoadInstitutions();
+
+            var institutionLookup = _institutions!
+                .Where(i => i.Id != 0)
+                .GroupBy(i => i.Id)
+                .ToDictionary(g => g.Key, g => g.First().Name);
+
+
+
             int rowIndex = 0;
-            
+
 
             while (reader.Read())
             {
@@ -178,6 +199,12 @@ public class DbfContext
                     for (int i = 0; i < columns.Count; i++)
                         map[columns[i]] = reader.GetValue(i);
 
+                    var intezmenyId = ParseInt(Get(map, "INTEZMENY"));
+
+                    var intezmenyNev = institutionLookup.TryGetValue(intezmenyId, out var nev)
+                        ? nev
+                        : "Hiányzó adat";
+
                     var child = new Child(
                         ParseInt(Get(map, "GYEREKID")),
                         ParseInt(Get(map, "SZULOAZON")),
@@ -188,7 +215,7 @@ public class DbfContext
                         ParseInt(Get(map, "TAJSZAM")),
                         ParseString(Get(map, "SZULIDO")),
                         ParseString(Get(map, "ANYJANEVE")),
-                        ParseInt(Get(map, "INTEZMENY")),
+                        intezmenyNev,
                         ParseInt(Get(map, "GYEREKTIPUS")),
                         ParseInt(Get(map, "OSSZEG")),
                         ParseInt(Get(map, "SZAMLASZAM")),
@@ -205,9 +232,7 @@ public class DbfContext
                     if (string.IsNullOrWhiteSpace(child.Gyereknev))
                         continue;
 
-
                     _children.Add(child);
-                    //rowIndex++;
                 }
                 catch (Exception ex)
                 {
@@ -339,4 +364,55 @@ public class DbfContext
             );
         }
     }
+    private void LoadInstitutions()
+    {
+        _institutions = new List<Institution>();
+
+        var path = Path.Combine(
+            Program.Config.Settings.Database.DbfFolder,
+            "intezmeny.dbf"
+        );
+
+        if (!File.Exists(path))
+        {
+            MessageBox.Show(
+                $"Az intézmény DBF nem található:\n{path}",
+                "DBF hiba",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error
+            );
+            return;
+        }
+
+        using var reader = new DbfDataReader.DbfDataReader(path);
+
+        var columns = new List<string>();
+        for (int i = 0; i < reader.FieldCount; i++)
+            columns.Add(reader.GetName(i).Trim());
+
+        while (reader.Read())
+        {
+            var map = new Dictionary<string, object?>(
+                StringComparer.OrdinalIgnoreCase
+            );
+
+            for (int i = 0; i < columns.Count; i++)
+                map[columns[i]] = reader.GetValue(i);
+
+            var institution = new Institution
+            {
+                Id = ParseInt(Get(map, "INTEZMENYA")),
+                Name = ParseString(Get(map, "INTEZMENYN"))
+            };
+
+            if (institution.Id == 0)
+                continue;
+
+            if (string.IsNullOrWhiteSpace(institution.Name))
+                continue;
+
+            _institutions.Add(institution);
+        }
+    }
+
 }

@@ -42,33 +42,6 @@ namespace rgyt2._0.Forms
             ApplyTheme();
         }
 
-        private void ApplyCreateUserStyling()
-        {
-            panel1.BackColor = Color.FromArgb(240, 240, 240);
-            panel2.BackColor = Color.White;
-
-            Font titleFont = new Font("Segoe UI", 14F, FontStyle.Bold);
-            Font baseFont = new Font("Segoe UI", 9F);
-
-            label1.Font = titleFont;
-
-            foreach (Control c in panel2.Controls)
-                c.Font = baseFont;
-
-            usernameTextBox.Width = 200;
-            passwordTextBox.Width = 200;
-            passwordConfirmPassTextBox.Width = 200;
-
-            passwordTextBox.UseSystemPasswordChar = true;
-            passwordConfirmPassTextBox.UseSystemPasswordChar = true;
-
-            submitBtn.FlatStyle = FlatStyle.Flat;
-            submitBtn.FlatAppearance.BorderSize = 0;
-            submitBtn.BackColor = Color.FromArgb(47, 110, 165);
-            submitBtn.ForeColor = Color.White;
-        }
-
-
         private void LoadUsers()
         {
             _users = _userRepository.GetAll();
@@ -89,11 +62,6 @@ namespace rgyt2._0.Forms
             if (usersGridView.Columns[nameof(User.IsActive)] != null)
                 usersGridView.Columns[nameof(User.IsActive)].HeaderText = "Aktív";
 
-            AddResetPasswordColumn();
-        }
-
-        private void AddResetPasswordColumn()
-        {
             if (usersGridView.Columns["ResetPassword"] != null)
                 return;
 
@@ -107,7 +75,6 @@ namespace rgyt2._0.Forms
 
             usersGridView.Columns.Add(btnCol);
         }
-
 
         private void ClearCreateUserForm()
         {

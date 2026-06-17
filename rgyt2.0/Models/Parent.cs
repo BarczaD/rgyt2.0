@@ -22,7 +22,7 @@ namespace rgyt2._0.Models
         public int Szamlaszam { get; set; }
         public short Egyedulnev { get; set; }
         public int Intezmeny { get; set; }
-        public DateOnly Felulvizsg { get; set; }
+        public DateOnly? Felulvizsg { get; set; }
         public int Egyforejut { get; set; }
         public short Hh { get; set; }
         public short Hhjog1 { get; set; }
@@ -76,9 +76,7 @@ namespace rgyt2._0.Models
             Egyedulnev = egyedulnev;
             Intezmeny = intezmeny;
 
-            Felulvizsg = DateOnly.TryParse(felulvizsg, out var fel)
-                ? fel
-                : default;
+            Felulvizsg = DataHelper.ParseDbfDate(felulvizsg);
 
             Egyforejut = egyforejut;
             Hh = hh;

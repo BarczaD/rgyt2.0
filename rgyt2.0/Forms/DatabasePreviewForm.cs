@@ -32,7 +32,6 @@ namespace rgyt2._0.Forms
             var parents = new BindingList<Parent>(Program.DbfContext.GetParents().ToList());
 
 
-            // ---- Gyerek grid ----
             childGridView.SuspendLayout();
             childGridView.VirtualMode = false;
             childGridView.DataSource = null;

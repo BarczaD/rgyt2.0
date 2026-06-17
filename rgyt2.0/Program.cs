@@ -24,7 +24,6 @@ namespace rgyt2._0
             string dbfFolder = Config.Settings.Database.DbfFolder;
             string sqliteFile = Config.Settings.Database.SqliteFile;
 
-            // ✅ SQLITE ellenőrzés → KÖTELEZŐ
             if (!File.Exists(sqliteFile))
             {
                 MessageBox.Show(
@@ -36,7 +35,6 @@ namespace rgyt2._0
                 return;
             }
 
-            // ✅ DBF mappa ellenőrzés → NEM kötelező
             bool dbfAvailable = Directory.Exists(dbfFolder);
 
             if (!dbfAvailable)
@@ -50,15 +48,16 @@ namespace rgyt2._0
             }
             else
             {
-                // ✅ csak ha van DBF
                 EnsurePythonDbfModule();
                 RunPythonFilter(dbfFolder);
             }
 
-            // ✅ Kontextusok
             DbfContext = new DbfContext(dbfFolder);
             SqliteContext = new SQLiteDbContext(sqliteFile);
             AuthService = new AuthService(SqliteContext);
+
+            var databasePreviewForm = new DatabasePreviewForm();
+            //databasePreviewForm.ShowDialog();     // CSAK DEBUG
 
             using var loginForm = new LoginForm();
 

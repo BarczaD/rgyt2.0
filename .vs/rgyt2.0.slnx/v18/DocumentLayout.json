@@ -3,24 +3,112 @@
   "WorkspaceRootPath": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\forms\\queryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\forms\\queryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\models\\parent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\models\\parent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\models\\datahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\models\\datahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\models\\child.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\models\\child.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\database\\dbfcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\database\\dbfcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\forms\\queryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\forms\\queryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\forms\\databasepreviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\forms\\databasepreviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\models\\institution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\models\\institution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\models\\configuration\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\models\\configuration\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\models\\configuration\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\models\\configuration\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\forms\\usermanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\forms\\usermanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\forms\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\forms\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\forms\\settingsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\forms\\settingsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\forms\\passwordchangeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\forms\\passwordchangeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\forms\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\forms\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\forms\\passwordchangeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\forms\\passwordchangeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\forms\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\forms\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\services\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\services\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\services\\configservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\services\\configservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\forms\\queryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\forms\\queryform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\forms\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\forms\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\database\\sqlitedatabasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\database\\sqlitedatabasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|d:\\prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{B6D2B4BE-345A-E7F6-5064-0539AA9EFFCE}|rgyt2.0\\rgyt2.0.csproj|solutionrelative:rgyt2.0\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,69 +118,333 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\MainForm.cs",
-              "RelativeDocumentMoniker": "rgyt2.0\\Forms\\MainForm.cs",
-              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\MainForm.cs [Design]",
-              "RelativeToolTip": "rgyt2.0\\Forms\\MainForm.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "DataHelper.cs",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Models\\DataHelper.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Models\\DataHelper.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Models\\DataHelper.cs",
+              "RelativeToolTip": "rgyt2.0\\Models\\DataHelper.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T14:23:42.221Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Program.cs",
-              "RelativeDocumentMoniker": "rgyt2.0\\Program.cs",
-              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Program.cs",
-              "RelativeToolTip": "rgyt2.0\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T14:12:07.693Z",
+              "WhenOpened": "2026-06-17T07:18:42.109Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "DBFContext.cs",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Database\\DBFContext.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Database\\DBFContext.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Database\\DBFContext.cs",
+              "RelativeToolTip": "rgyt2.0\\Database\\DBFContext.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAuwHoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T07:54:14.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DatabasePreviewForm.cs",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\DatabasePreviewForm.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Forms\\DatabasePreviewForm.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\DatabasePreviewForm.cs",
+              "RelativeToolTip": "rgyt2.0\\Forms\\DatabasePreviewForm.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwB4AAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T07:42:08.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QueryForm.cs",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\QueryForm.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Forms\\QueryForm.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\QueryForm.cs",
+              "RelativeToolTip": "rgyt2.0\\Forms\\QueryForm.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T12:38:13.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Institution.cs",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Models\\Institution.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Models\\Institution.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Models\\Institution.cs",
+              "RelativeToolTip": "rgyt2.0\\Models\\Institution.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T09:41:50.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Child.cs",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Models\\Child.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Models\\Child.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Models\\Child.cs",
+              "RelativeToolTip": "rgyt2.0\\Models\\Child.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAswEYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T09:51:51.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppConfig.cs",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Models\\Configuration\\AppConfig.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Models\\Configuration\\AppConfig.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Models\\Configuration\\AppConfig.cs",
+              "RelativeToolTip": "rgyt2.0\\Models\\Configuration\\AppConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T08:09:15.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MainForm.cs",
               "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\MainForm.cs",
               "RelativeDocumentMoniker": "rgyt2.0\\Forms\\MainForm.cs",
               "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\MainForm.cs",
               "RelativeToolTip": "rgyt2.0\\Forms\\MainForm.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAiwDkAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T14:11:56.798Z",
+              "WhenOpened": "2026-05-04T14:18:48.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Program.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Program.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Program.cs",
+              "RelativeToolTip": "rgyt2.0\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAmwCkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T14:12:07.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Models\\User.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Models\\User.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Models\\User.cs",
+              "RelativeToolTip": "rgyt2.0\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T12:35:27.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Parent.cs",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Models\\Parent.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Models\\Parent.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Models\\Parent.cs",
+              "RelativeToolTip": "rgyt2.0\\Models\\Parent.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAuwFAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T10:33:48.974Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
+              "Title": "DatabaseConfig.cs",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Models\\Configuration\\DatabaseConfig.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Models\\Configuration\\DatabaseConfig.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Models\\Configuration\\DatabaseConfig.cs",
+              "RelativeToolTip": "rgyt2.0\\Models\\Configuration\\DatabaseConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T14:23:41.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserManagementForm.cs [Design]",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\UserManagementForm.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Forms\\UserManagementForm.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\UserManagementForm.cs [Design]",
+              "RelativeToolTip": "rgyt2.0\\Forms\\UserManagementForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:38:11.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PasswordChangeForm.cs [Design]",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\PasswordChangeForm.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Forms\\PasswordChangeForm.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\PasswordChangeForm.cs [Design]",
+              "RelativeToolTip": "rgyt2.0\\Forms\\PasswordChangeForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T11:46:18.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SettingsForm.Designer.cs",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\SettingsForm.Designer.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Forms\\SettingsForm.Designer.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\SettingsForm.Designer.cs",
+              "RelativeToolTip": "rgyt2.0\\Forms\\SettingsForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:41:56.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SettingsForm.cs",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\SettingsForm.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Forms\\SettingsForm.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\SettingsForm.cs",
+              "RelativeToolTip": "rgyt2.0\\Forms\\SettingsForm.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAswDkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T11:17:54.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\appsettings.json",
+              "RelativeDocumentMoniker": "rgyt2.0\\appsettings.json",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\appsettings.json",
+              "RelativeToolTip": "rgyt2.0\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-11T11:10:23.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PasswordChangeForm.cs",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\PasswordChangeForm.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Forms\\PasswordChangeForm.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\PasswordChangeForm.cs",
+              "RelativeToolTip": "rgyt2.0\\Forms\\PasswordChangeForm.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAswDQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:12:53.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SettingsForm.cs [Design]",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\SettingsForm.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Forms\\SettingsForm.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\SettingsForm.cs [Design]",
+              "RelativeToolTip": "rgyt2.0\\Forms\\SettingsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T11:19:42.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ConfigService.cs",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Services\\ConfigService.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Services\\ConfigService.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Services\\ConfigService.cs",
+              "RelativeToolTip": "rgyt2.0\\Services\\ConfigService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T08:10:07.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Forms\\MainForm.Designer.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\MainForm.Designer.cs",
+              "RelativeToolTip": "rgyt2.0\\Forms\\MainForm.Designer.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAvwLgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T11:45:43.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Services\\UserRepository.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Services\\UserRepository.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Services\\UserRepository.cs",
+              "RelativeToolTip": "rgyt2.0\\Services\\UserRepository.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAADwv2cAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T10:41:16.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SQLiteDatabaseContext.cs",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Database\\SQLiteDatabaseContext.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Database\\SQLiteDatabaseContext.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Database\\SQLiteDatabaseContext.cs",
+              "RelativeToolTip": "rgyt2.0\\Database\\SQLiteDatabaseContext.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA5wBAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T08:12:35.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "QueryForm.Designer.cs",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\QueryForm.Designer.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Forms\\QueryForm.Designer.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\QueryForm.Designer.cs",
+              "RelativeToolTip": "rgyt2.0\\Forms\\QueryForm.Designer.cs",
+              "ViewState": "AgIAAAsBAAAAAAAAAAAhwCwBAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T07:55:54.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LoginForm.Designer.cs",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\LoginForm.Designer.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Forms\\LoginForm.Designer.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\LoginForm.Designer.cs",
+              "RelativeToolTip": "rgyt2.0\\Forms\\LoginForm.Designer.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAowMwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T14:11:41.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "rgyt2.0\\Properties\\Resources.resx",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Properties\\Resources.resx",
+              "RelativeToolTip": "rgyt2.0\\Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-04-21T10:01:13.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\LoginForm.cs",
               "RelativeDocumentMoniker": "rgyt2.0\\Forms\\LoginForm.cs",
               "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\LoginForm.cs [Design]",
               "RelativeToolTip": "rgyt2.0\\Forms\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T11:28:10.203Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "QueryForm.cs [Design]",
-              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\QueryForm.cs",
-              "RelativeDocumentMoniker": "rgyt2.0\\Forms\\QueryForm.cs",
-              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\QueryForm.cs [Design]",
-              "RelativeToolTip": "rgyt2.0\\Forms\\QueryForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T10:40:40.013Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-04-20T11:28:10.203Z"
             }
           ]
         }
