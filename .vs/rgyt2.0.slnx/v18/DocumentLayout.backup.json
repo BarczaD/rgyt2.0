@@ -130,8 +130,7 @@
               "RelativeToolTip": "rgyt2.0\\Models\\DataHelper.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAgwCgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T07:18:42.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-17T07:18:42.109Z"
             },
             {
               "$type": "Document",
@@ -143,8 +142,7 @@
               "RelativeToolTip": "rgyt2.0\\Database\\DBFContext.cs",
               "ViewState": "AgIAAG4AAAAAAAAAAAAuwHoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T07:54:14.092Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T07:54:14.092Z"
             },
             {
               "$type": "Document",
@@ -166,7 +164,7 @@
               "RelativeDocumentMoniker": "rgyt2.0\\Forms\\QueryForm.cs",
               "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\QueryForm.cs",
               "RelativeToolTip": "rgyt2.0\\Forms\\QueryForm.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowDAAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-27T12:38:13.882Z",
               "EditorCaption": ""
@@ -193,8 +191,7 @@
               "RelativeToolTip": "rgyt2.0\\Models\\Child.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAswEYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T09:51:51.883Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T09:51:51.883Z"
             },
             {
               "$type": "Document",
@@ -254,8 +251,7 @@
               "RelativeToolTip": "rgyt2.0\\Models\\Parent.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAAuwFAAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T10:33:48.974Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-04T10:33:48.974Z"
             },
             {
               "$type": "Document",
@@ -268,28 +264,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-11T14:23:41.225Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UserManagementForm.cs [Design]",
-              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\UserManagementForm.cs",
-              "RelativeDocumentMoniker": "rgyt2.0\\Forms\\UserManagementForm.cs",
-              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\UserManagementForm.cs [Design]",
-              "RelativeToolTip": "rgyt2.0\\Forms\\UserManagementForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T12:38:11.59Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "PasswordChangeForm.cs [Design]",
-              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\PasswordChangeForm.cs",
-              "RelativeDocumentMoniker": "rgyt2.0\\Forms\\PasswordChangeForm.cs",
-              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\PasswordChangeForm.cs [Design]",
-              "RelativeToolTip": "rgyt2.0\\Forms\\PasswordChangeForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T11:46:18.453Z"
             },
             {
               "$type": "Document",
@@ -339,17 +313,6 @@
               "ViewState": "AgIAAA8AAAAAAAAAAAAswDQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-11T12:12:53.051Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SettingsForm.cs [Design]",
-              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\SettingsForm.cs",
-              "RelativeDocumentMoniker": "rgyt2.0\\Forms\\SettingsForm.cs",
-              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\SettingsForm.cs [Design]",
-              "RelativeToolTip": "rgyt2.0\\Forms\\SettingsForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T11:19:42.628Z"
             },
             {
               "$type": "Document",
@@ -409,8 +372,7 @@
               "RelativeToolTip": "rgyt2.0\\Forms\\QueryForm.Designer.cs",
               "ViewState": "AgIAAAsBAAAAAAAAAAAhwCwBAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-21T07:55:54.76Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-21T07:55:54.76Z"
             },
             {
               "$type": "Document",
@@ -434,6 +396,43 @@
               "RelativeToolTip": "rgyt2.0\\Properties\\Resources.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
               "WhenOpened": "2026-04-21T10:01:13.383Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserManagementForm.cs [Design]",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\UserManagementForm.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Forms\\UserManagementForm.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\UserManagementForm.cs [Design]",
+              "RelativeToolTip": "rgyt2.0\\Forms\\UserManagementForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T12:38:11.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PasswordChangeForm.cs [Design]",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\PasswordChangeForm.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Forms\\PasswordChangeForm.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\PasswordChangeForm.cs [Design]",
+              "RelativeToolTip": "rgyt2.0\\Forms\\PasswordChangeForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T11:46:18.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SettingsForm.cs [Design]",
+              "DocumentMoniker": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\SettingsForm.cs",
+              "RelativeDocumentMoniker": "rgyt2.0\\Forms\\SettingsForm.cs",
+              "ToolTip": "D:\\Prog\\hivatal\\rgyt kiv\u00E1lt\u00E1s\\source\\rgyt2.0\\Forms\\SettingsForm.cs [Design]",
+              "RelativeToolTip": "rgyt2.0\\Forms\\SettingsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T11:19:42.628Z"
             },
             {
               "$type": "Document",

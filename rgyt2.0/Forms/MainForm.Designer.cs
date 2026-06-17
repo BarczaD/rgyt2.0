@@ -120,7 +120,7 @@
             // 
             toolStripStatusLabel4.Name = "toolStripStatusLabel4";
             toolStripStatusLabel4.Size = new Size(28, 17);
-            toolStripStatusLabel4.Text = "v1.0";
+            toolStripStatusLabel4.Text = "v1.2";
             // 
             // panel1
             // 
