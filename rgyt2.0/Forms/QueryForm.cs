@@ -42,9 +42,7 @@ namespace rgyt2._0.Forms
                         : "",
                     Intézmény = x.gy.IntezmenyNev,
                     Szülő = x.sz.Szulonev,
-                    Irányítószám = x.gy.Irsz,
-                    Utca = x.gy.Utca,
-                    Házszám = x.gy.Hsz,
+                    Lakcím = $"{x.gy.Irsz} {x.gy.Utca} {x.gy.Hsz}",
                     HH = x.gy.Hh,
                     FelülvizsgálatDátuma = FormatDate(x.gy.Jogdatum),
                 })

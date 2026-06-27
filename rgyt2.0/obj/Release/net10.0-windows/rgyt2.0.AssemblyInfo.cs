@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("rgyt2.0")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2fd18624d94901a31efe3abb574bf39c9e7a8218")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c76ad2d00e0760e592ce4d8e6c0709fb05286ff")]
 [assembly: System.Reflection.AssemblyProductAttribute("rgyt2.0")]
 [assembly: System.Reflection.AssemblyTitleAttribute("rgyt2.0")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
